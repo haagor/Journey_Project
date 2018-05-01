@@ -6,10 +6,12 @@ import (
     "sort"
     "os"
     "strconv"
+    "time"
 )
 
 
 func main() {
+	rand.Seed(time.Now().UTC().UnixNano())
 
 	l_offense,_ := strconv.Atoi(os.Args[1])
 	l_defense,_ := strconv.Atoi(os.Args[2])
@@ -29,7 +31,7 @@ func fight(p_offense_amount int, p_defense_amount int) int {
 	var l_defense_dice []int
 
 	if p_offense_amount <= 1 {
-		fmt.Println("attack failed")
+		//fmt.Println("attack failed")
 		return 0	// attack failed
 	} else if p_offense_amount == 2 {
 		l_offense_dice = append(l_offense_dice, rand.Intn(6))
@@ -43,7 +45,7 @@ func fight(p_offense_amount int, p_defense_amount int) int {
 	}
 
 	if p_defense_amount <= 0 {
-		fmt.Println("assault successed")
+		//fmt.Println("assault successed")
 		return 1	// assault successed
 	} else if p_defense_amount == 1 {
 		l_defense_dice = append(l_defense_dice, rand.Intn(6))
@@ -52,13 +54,14 @@ func fight(p_offense_amount int, p_defense_amount int) int {
 		l_defense_dice = append(l_defense_dice, rand.Intn(6))
 	}
 
-	sort.Ints(l_offense_dice)
-	sort.Ints(l_defense_dice)
+	sort.Sort(sort.Reverse(sort.IntSlice(l_offense_dice)))
+	sort.Sort(sort.Reverse(sort.IntSlice(l_defense_dice)))
 
 	l_offense_amount := p_offense_amount
 	l_defense_amount := p_defense_amount
 
 	for c_battle := 0; c_battle < min(len(l_offense_dice), len(l_defense_dice)); c_battle++ {
+		//fmt.Println(strconv.Itoa(l_offense_dice[c_battle]) + " vs " + strconv.Itoa(l_defense_dice[c_battle]))
 		if l_offense_dice[c_battle] > l_defense_dice[c_battle] {
 			l_defense_amount--
 		} else {
