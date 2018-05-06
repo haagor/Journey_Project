@@ -8,7 +8,7 @@ Evolution du pourcentage de chance de gagner contre 200 défenseurs en fonction 
 ![N|Solid](https://raw.githubusercontent.com/haagor/Journey_Project/master/img/offensevs100.png)
 
 Evolution du pourcentage de chance de gagner en fonction du nombre attaquant=défenseur.
-![N|Solid](https://raw.githubusercontent.com/haagor/Journey_Project/master/img/offensevs100.png)
+![N|Solid](https://raw.githubusercontent.com/haagor/Journey_Project/master/img/armytoarmy.png)
 
 
 `todo` think about map design
