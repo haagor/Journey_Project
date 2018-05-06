@@ -22,7 +22,7 @@ func main() {
 		l_res += fight(l_offense, l_defense)
 	}
 
-	fmt.Println(strconv.Itoa(l_res * 100 / l_accuracy) + "% to win !")
+	fmt.Println(os.Args[1] + ";" + strconv.Itoa(l_res * 100 / l_accuracy))
 }
 
 // fight like Risk
