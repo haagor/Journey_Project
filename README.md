@@ -30,7 +30,8 @@ Je distingue 3 catégories d'implémentation de map :
 
 ![N|Solid](https://raw.githubusercontent.com/haagor/Journey_Project/master/img/BB.png)
   
-Le choix numéro 2 me semble le plus approrié : plus simple à implémenter que la mpa en coordonnée, et proposant un meilleur résultat en terme de navigation que le découpage en zone.
+Le choix numéro 2 me semble le plus approrié : plus simple à implémenter que la mpa en coordonnée, et proposant une meilleure expérience en terme de navigation que le découpage en zone.
+Mon mvp de la map sera l'occasion de retrouver les goroutines : un serveur gére les informations relatives à la map. Il autorise des clients à se connecter et les gére en créant des goroutines. Ainsi les clients se déplaceront dans un premier temps avec les touches diréctionnelles du clavier (pas d'ihm pour cliquer). Ce mvp a de forte chance de s'appuyer sur ce que j'avais réalisé avec mes camarades de [ChessProject](https://github.com/Lydwen/PFE_ChessProject_Server).
 
 
   ***
