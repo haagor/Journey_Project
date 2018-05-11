@@ -17,12 +17,15 @@ Evolution du pourcentage de chance de gagner en fonction du nombre attaquant=dé
 Je distingue 3 catégories d'implémentation de map :
 
 1. Découpage en zone, accéssible de proche en proche, comme dans Risk.
+
 ![N|Solid](https://raw.githubusercontent.com/haagor/Journey_Project/master/img/Risk.png)
 
 2. Cadrillage, que ce soit carré ou hoctogonal.
+
 ![N|Solid](https://raw.githubusercontent.com/haagor/Journey_Project/master/img/HMM.png)
 
 3. Repère orthonormé.
+
 ![N|Solid](https://raw.githubusercontent.com/haagor/Journey_Project/master/img/BB.png)
   
 Le choix numéro 2 me semble le plus approrié : plus simple à implémenter que la mpa en coordonnée, et proposant un meilleur résultat en terme de navigation que le découpage en zone.
