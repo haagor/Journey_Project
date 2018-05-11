@@ -8,7 +8,6 @@ echo "army;% to win" > tmp/data.csv
 IT=0
 while [ $IT -lt $LOOP ]
 do
-    # care gtime (MacOs) = time (Linux)
     ./fight_risk $ARMY $ARMY 10000 >> tmp/data.csv
     let IT=IT+1
     let ARMY=ARMY+5

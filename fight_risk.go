@@ -1,4 +1,4 @@
-package main
+package fight_risk
 
 import (
     "fmt"
