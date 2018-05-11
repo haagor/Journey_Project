@@ -33,7 +33,7 @@ Je distingue 3 catégories d'implémentation de map :
 Le choix numéro 2 me semble le plus approrié : plus simple à implémenter que la mpa en coordonnée, et proposant un meilleur résultat en terme de navigation que le découpage en zone.
 
 
-
+  ***
 `todo` implem mvp map
 
 *Simon P.*
