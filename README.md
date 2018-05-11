@@ -20,10 +20,12 @@ Je distingue 3 catégories d'implémentation de map :
 
 ![N|Solid](https://raw.githubusercontent.com/haagor/Journey_Project/master/img/Risk.png)
   
+
 2. Cadrillage, que ce soit carré ou hoctogonal.
 
 ![N|Solid](https://raw.githubusercontent.com/haagor/Journey_Project/master/img/HMM.png)
   
+
 3. Repère orthonormé.
 
 ![N|Solid](https://raw.githubusercontent.com/haagor/Journey_Project/master/img/BB.png)
